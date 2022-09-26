@@ -34,6 +34,7 @@
 html{
    scroll-behavior: smooth;
 }
+
 /*! FIRST PAGE*/
 .headerBody{
    height: 100vh;
@@ -348,6 +349,14 @@ text-decoration: none;
    .leftAbout,.rightAbout{
       width: 100%;
    }
+}
+@media (max-width:900px) {
+   .orange3{
+      display: flex;
+      flex-direction: column;
+      
+   }
+   
 }
 @media (max-height:500px) {
    .page1,.page2,.page3{
