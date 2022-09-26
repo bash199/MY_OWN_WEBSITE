@@ -10,6 +10,7 @@
    <script src="https://kit.fontawesome.com/6719e0771f.js" crossorigin="anonymous"></script>
    <title>My Own Website</title>
 </head>
+      <!--! first page -->
    <header class="page1 headerBody">
       <div class="orange">
       <nav class="topNavBar">
@@ -22,21 +23,52 @@
             </div>
          </div>
          <div class="rightNav">
-            <div class="home">Home</div>
-            <div class="about">About</div>
-            <div class="projects">Projects</div>
-            <div class="contact">Contact</div>
+            <div class="home"><a href="#">Home</a></div>
+            <div   class="about">
+               <a href="#about">About</a>
+            </div>
+            <div class="projects">
+               <a href="#project">Projects</a>
+            </div>
+            <div class="contact">
+               <a href="#contact">Contact</a>
+            </div>
          </div>
       </nav>
       <div class="myImage-name">
-         <div class="myImage-div"><img class="myImage" src="/imgs/me.jpg" alt="me"></div>
-         <div class="name-div"><span class="name">Bashir Tarif</span></div>
+         <div class="myImage-div">
+            <img class="myImage" src="/imgs/me.jpg" alt="me">
+         </div>
+         <div class="name-div">
+            <span class="name">Bashir Tarif</span>
+         </div>
          <div class="web-dev">
          <span class="web-dev-span">Web Developer</span>
          </div>
+         <div class="logos-g-f-l">
+            <div class="github">
+               <a href="https://github.com/bash199?tab=repositories" target="_blank">
+               <i class="fa-brands fa-square-github"></i>
+               </a>
+            </div>
+            <div  class="facebook">
+               <a href="https://www.facebook.com/basheer.tareef.5/" target="_blank">
+                  <i class="fa-brands fa-square-facebook"></i>
+               </a>
+            </div>
+            <div class="linkedin">
+               <a href="https://www.linkedin.com/in/bashir-tarif-08850b24b/" target="_blank">
+                  <i class="fa-brands fa-linkedin">
+                     
+                  </i>
+               </a>
+            </div>
+         </div>
       </div>
    </div> 
+   <a id="about" href="#"></a>
    </header>
+         <!--! second page -->
    <section class="page2 mainSection">
       <div class="aboutme">
          <h2>About Me</h2>
@@ -54,33 +86,78 @@
                </li>
                <li>
                   <span class="first-block">Address:</span>
-                  <span class="second-block">Israel Hazafon Julis, Almnzol 23.</span>
+                  <span class="second-block">Israel Hazafon, Julis</span>
                </li>
             </ul>
          </div>
          <div class="rightAbout">
             <h2>Hello There!</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi iure ab repudiandae. Dignissimos deleniti repellat illum deserunt in earum nemo consequatur quisquam, sunt adipisci voluptatem perferendis perspiciatis unde eaque magni.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias inventore ad tempore temporibus quisquam aperiam.</p>
-            <div>
-               <ul class="infoLogo"> 
-                  <li class="github">
-                     <a href="https://github.com/bash199?tab=repositories" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/40/000000/github.png"/>
-                     </a>
-                  </li>
-                  <li class="facebook">
-                        <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/basheer.tareef.5/" target="_blank"></a></i>
-                  </li>
-                  <li class="linkedin">
-                     <a href="https://www.linkedin.com/in/bashir-tarif-08850b24b/" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/40/000000/linkedin-circled--v1.png"/>
-                     </a>
-                  </li>
-               </ul>
-            </div>
+            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias inventore ad tempore temporibus quisquam aperiam.</p>
          </div>
       </div>
    </section>
+
+            <!--! third page -->
+   <section class="page3 project-sec">
+      <a id="project" href=""></a>
+      <div class="orange3">
+         <div class="tesla">
+            <a href="https://6325eb4eb0766300071462a3--teslawebpage.netlify.app/"target="_blank">
+            <div class="image-div-tesla">
+               <img class="image-tesla" src="/imgs/tesla.png">
+            </div>
+            <div class="about-tesla">
+               
+               <h3 class="project-name">TESLA</h3>
+               <p class="p-project-explain">tesla project</p>
+            </div>
+         </a>
+         </div>
+         <div class="pixar">
+            <a href="#">
+            <div class="image-div-pixar">
+               <img class="image-pixar" src="/imgs/pixar.png">
+            </div>
+            <div class="about-pixar">
+               <h3 class="project-name">PIXAR</h3>
+               <p class="p-project-explain">pixar project</p>
+            </div>
+            </a>
+         </div>
+         <div class="dropbox">
+            <div class="image-div-dropbox">
+               <img class="image-dropbox" src="/imgs/dropbox.png">
+            </div>
+            <div class="about-dropbox">
+               <h3 class="project-name">DROPBOX</h3>
+               <p class="p-project-explain">dropbox project</p>
+            </div>
+            </a>
+         </div>
+      </div>
+   </section>
+   <!--! fourth page -->
+   <section class="page4 contact-sec">
+      <a id="contact" href=""></a>
+      <h2>Contact</h2>
+      <form class="contact-div">
+            <div class="row name-div">
+               <input class="name-control" type="text"
+               placeholder="Your Name"
+               id="name" name="name">
+            </div>
+            <div class="row email-div">
+               <input class="email-control" type="text" placeholder="Your Email" id="email" name="email">
+            </div>
+            <div class="row subject-div">
+               <input class="subject-control" type="text"  placeholder="The Subject" id="subject" name="subject">
+            </div>
+            <textarea name="massege" id="massege" class="row-somthing somthing-div" placeholder="Say Something" rows="10" cols="50" >
+            </textarea>
+            <button class="btn" >Send</button>
+      </form>
+   </section>
+
 </body>
 </html>
