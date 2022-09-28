@@ -348,7 +348,23 @@ text-decoration: none;
    }
    .leftAbout,.rightAbout{
       width: 100%;
+      text-align: center;
    }
+   .tesla,.pixar,.dropbox{
+      width: 250px;
+      height: 250px;
+   }
+   .image-tesla,.image-pixar,
+.image-dropbox{
+   width:250px;
+   height: 150px;
+   margin-bottom: 10px;
+}
+.image-div-tesla,.image-div-pixar,
+.image-div-dropbox{
+   width:fit-content;
+   height: 150px;
+}
 }
 @media (max-width:900px) {
    .orange3{
